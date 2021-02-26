@@ -1,0 +1,18 @@
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func sorting(arr []string) []string {
+	sort.Strings(arr)
+	return arr
+}
+func main() {
+	var arr = []string{"c", "a", "d"}
+	var ar = []string{}
+
+	ar = sorting(arr)
+	fmt.Printf("sort is:%v", ar)
+}
